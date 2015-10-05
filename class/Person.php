@@ -48,6 +48,35 @@ class Person
     public $country;
 
     /**
+     * Person constructor.
+     * @param string $type
+     * @param $personalId
+     * @param $givenName
+     * @param $sn1
+     * @param $sn2
+     * @param $email
+     * @param $postalAdress
+     * @param $locality
+     * @param $postalCode
+     * @param $state
+     * @param $country
+     */
+    public function __construct($type, $personalId, $givenName, $sn1, $sn2, $email, $postalAdress, $locality, $postalCode, $state, $country)
+    {
+        $this->type = $type;
+        $this->personalId = $personalId;
+        $this->givenName = $givenName;
+        $this->sn1 = $sn1;
+        $this->sn2 = $sn2;
+        $this->email = $email;
+        $this->postalAdress = $postalAdress;
+        $this->locality = $locality;
+        $this->postalCode = $postalCode;
+        $this->state = $state;
+        $this->country = $country;
+    }
+
+    /**
      * @return mixed
      */
     public function getEmail()
@@ -142,6 +171,7 @@ class Person
     {
         $this->country = $country;
     }
+
 
 
     /**
