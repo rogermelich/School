@@ -8,6 +8,7 @@
  */
 class Person
 {
+    protected $type = "estudiant";
     /**
      * Idetificador de la persona.Per exemple DNI NIE Passaport
      * @var
@@ -210,7 +211,7 @@ class Person
     public function render()
     {
         if ($this->dual){
-            echo "El estudiant té el nom" . $this->get . givenName() . "no cobra res";
+            echo "El {$this->type} té el nom" . $this->get . givenName();
         }
     }
 }
