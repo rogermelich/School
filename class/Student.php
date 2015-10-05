@@ -14,9 +14,20 @@ class Student extends Person
 
     public $classRoomGroup;
 
+    /**
+     * Student constructor.
+     * @param bool $dual
+     */
+    public function __construct($dual)
+    {
+        parent::__construct();
+        if ($dual != null)
+        $this->dual = $dual;
+    }
+
     public function render(){
         $this->type = "Studiant";
         parent::render();
     }
-    
+
 }
