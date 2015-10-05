@@ -206,4 +206,11 @@ class Person
     {
         $this->personalId = $personalId;
     }
+
+    public function render()
+    {
+        if ($this->dual){
+            echo "El estudiant té el nom" . $this->get . givenName() . "no cobra res";
+        }
+    }
 }
