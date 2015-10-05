@@ -18,5 +18,5 @@ class Student extends Person
         $this->type = "Studiant";
         parent::render();
     }
-
+    
 }
