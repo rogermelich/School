@@ -8,7 +8,7 @@
  */
 class Person
 {
-    protected $type = "estudiant";
+    public $type = "estudiant";
     /**
      * Idetificador de la persona.Per exemple DNI NIE Passaport
      * @var
