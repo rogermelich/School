@@ -1,4 +1,4 @@
-<?php namespace Com\iesebre\Dam2\rogermelich;
+<?php
 
 /**
  * Created by PhpStorm.
@@ -6,6 +6,9 @@
  * Date: 5/10/15
  * Time: 18:13 falta trait
  */
+
+namespace Com\iesebre\Dam2\rogermelich\Person;
+
 class Student extends Person
 {
     use Worker;
@@ -18,15 +21,18 @@ class Student extends Person
      * Student constructor.
      * @param bool $dual
      */
-    public function __construct($dual)
+    public function __construct($dual = null)
     {
-        parent::__construct();
+        $this->type = "estudiant";
         if ($dual != null)
-        $this->dual = $dual;
+        $this->$dual;
     }
 
     public function render(){
-        $this->type = "Studiant";
+
+        if ($this->dual == true){
+            echo parent::render() . ", i cobra" . $this->salary;
+        } else
         parent::render();
     }
 

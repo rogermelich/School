@@ -1,4 +1,6 @@
-<?php namespace Com\iesebre\Dam2\rogermelich\Person;
+<?php
+
+namespace Com\iesebre\Dam2\rogermelich\Person;
 
 /**
  * Created by PhpStorm.
@@ -241,7 +243,7 @@ class Person
     public function render()
     {
         if ($this->dual){
-            echo "El {$this->type} té el nom" . $this->get . givenName();
+            echo "El {$this->type} té el nom" . $this->getGivenName();
         }
     }
 }

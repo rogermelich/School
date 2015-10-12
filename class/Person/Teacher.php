@@ -1,4 +1,6 @@
-<?php  namespace Com\iesebre\Dam2\rogermelich;
+<?php
+
+namespace Com\iesebre\Dam2\rogermelich\Person;
 
 /**
  * Created by PhpStorm.
