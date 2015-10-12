@@ -1,0 +1,16 @@
+{
+    "name": "roger/school",
+    "description": "Roger Melich Curto <rogermelich@gmail.com>",
+    "authors": [
+        {
+            "name": "rogermelich",
+            "email": "rogermelich@iesebre.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "Com\\iesebre\\Dam2\\rogermelich\\" : "Class"
+        }
+    },
+    "require": {}
+}
